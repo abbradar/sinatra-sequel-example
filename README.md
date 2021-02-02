@@ -15,8 +15,16 @@
 ### Quick start
 
 ```
-$ bundler install
-$ bundler exec unicorn
+$ bundle install
+(or, if Nix is used)
+$ nix-shell
+
+$ bundle exec unicorn
 (or, if hot reload is needed)
-$ bundler exec rerun unicorn
+$ bundle exec rerun unicorn
+
+### Updating dependencies
+
 ```
+$ bundle lock
+$ bundix # to update gemset.nix
