@@ -22,9 +22,11 @@ $ nix-shell
 $ bundle exec unicorn
 (or, if hot reload is needed)
 $ bundle exec rerun unicorn
+```
 
 ### Updating dependencies
 
 ```
 $ bundle lock
 $ bundix # to update gemset.nix
+```
